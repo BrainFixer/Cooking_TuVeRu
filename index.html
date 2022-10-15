@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodieland Site</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="head">
+        <div class="head-logo">
+          <a class="head-logo-link" href="/">Foodieland</a>
+        </div>
+        <nav class="head-nav">
+          <ul class="head-nav-menu">
+            <li class="head-nav-menu-item menu-item-active">
+              <a class="head-nav-menu-link" href="/"
+                ><i class="fa-solid fa-house"></i
+              ></a>
+            </li>
+            <li class="head-nav-menu-item">
+              <a class="head-nav-menu-link" href="recipes.html">Рецепты</a>
+            </li>
+            <li class="head-nav-menu-item">
+              <a class="head-nav-menu-link" href="blog.html">Блог</a>
+            </li>
+            <li class="head-nav-menu-item">
+              <a class="head-nav-menu-link" href="contact.html">Контакты</a>
+            </li>
+            <li class="head-nav-menu-item">
+              <a class="head-nav-menu-link" href="about.html">О нас</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="head-social">
+          <li class="head-social-item">
+            <a href="https://facebook.com"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="head-social-item">
+            <a href="https://twitter.com"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li class="head-social-item">
+            <a href="https://instagram.com"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </header>
+      <main class="contact">
+        <h1 class="contact-header">Свяжитесь с нами</h1>
+        <section class="contact-section">
+          <div class="contact-image-wrapper">
+            <img class="contact-image" src="./images/cook.png" alt="Повар" />
+          </div>
+          <form class="contact-form" action="/">
+            <div class="contact-form-up">
+              <div class="contact-form-left">
+                <div class="contact-form-input">
+                  <label for="name">Имя</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Введите Ваше имя..."
+                  />
+                </div>
+                <div class="contact-form-input">
+                  <label for="subject">Тема</label>
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Введите Вашу тему..."
+                  />
+                </div>
+              </div>
+              <div class="contact-form-right">
+                <div class="contact-form-input">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Введите Ваш адрес..."
+                  />
+                </div>
+                <div class="contact-form-input">
+                  <label for="enquiry">Запрос</label>
+                  <select name="enquiry" id="enquiry">
+                    <option value="advertising">Реклама</option>
+                    <option value="purchase">Покупка</option>
+                    <option value="sale">Продажа</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-input">
+              <label for="subject">Сообщение</label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Введите свое сообщение..."
+              ></textarea>
+            </div>
+            <button class="contact-button">Отправить</button>
+          </form>
+        </section>
+        <section class="subscribe-section">
+          <h2>Вкуснятина в почтовый ящик</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            maxime iure eveniet eaque, placeat dignissimos officiis. Maxime
+            impedit fuga vitae.
+          </p>
+          <form class="subscribe-form" action="">
+            <div class="subscribe-form-input">
+              <input type="email" placeholder="Введите Ваш адрес..." />
+              <button>Подписаться</button>
+            </div>
+          </form>
+          <img
+            class="subscribe-image-salad"
+            src="./images/salad.png"
+            alt="Салат"
+          />
+          <img
+            class="subscribe-image-rucola"
+            src="./images/rucola.png"
+            alt="Руккола"
+          />
+          <img
+            class="subscribe-image-plate"
+            src="./images/plate.png"
+            alt="Тарелка"
+          />
+        </section>
+        <section class="recipes-section"></section>
+      </main>
+      <footer class="foot"></footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/deba429617.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

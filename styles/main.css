@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+:root {
+  --main_bg: #fff;
+  --main_color: #000;
+  --main_font_family: "Inter", serif;
+  --form_color: rgba(0, 0, 0, 0.6);
+}
+
+body {
+  background: lightgrey;
+  font-family: var(--main_font_family);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main_color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--main_bg);
+}
+
+.head {
+  padding: 30px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  border-bottom: 1px solid #00000019;
+}
+
+.head-logo {
+  font-family: "Lobster";
+  font-size: 24px;
+  transition: all 0.5s ease;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.head-logo .head-logo-link {
+  transition: all 0.5s ease;
+}
+
+.head-logo:hover {
+  background: var(--main_color);
+}
+
+.head-logo:hover .head-logo-link {
+  color: var(--main_bg);
+}
+
+.head-nav-menu {
+  display: flex;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+}
+
+.head-nav-menu-item {
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+.head-nav-menu-item .head-nav-menu-link {
+  transition: all 0.5s ease;
+}
+
+.head-nav-menu-item:not(:last-child) {
+  margin-right: 60px;
+}
+
+.head-nav-menu-item:hover {
+  background: var(--main_color);
+}
+
+.head-nav-menu-item:hover .head-nav-menu-link {
+  color: var(--main_bg);
+}
+
+.menu-item-active {
+  background: var(--main_color);
+}
+
+.menu-item-active .head-nav-menu-link {
+  font-weight: 900;
+  color: var(--main_bg);
+}
+
+.head-social {
+  display: flex;
+}
+
+.head-social-item {
+  font-size: 20px;
+}
+
+.head-social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.contact {
+  padding: 80px;
+  padding-top: 0;
+}
+
+.contact-header {
+  text-align: center;
+  font-weight: 600;
+  font-size: 64px;
+  padding: 80px;
+}
+
+.contact-section {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-image-wrapper {
+  width: 400px;
+  height: 472px;
+  border-radius: 30px;
+  background: linear-gradient(#e7f9fd00, #e7f9fdff);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  position: absolute;
+  display: block;
+  width: 350px;
+  bottom: 0;
+}
+
+.contact-form {
+  color: var(--form_color);
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.contact-form label {
+  font-weight: 500;
+}
+
+.contact-form-up {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-form-input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+
+.contact-form-left,
+.contact-form-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 400px;
+  height: 60px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  outline: none;
+  color: var(--form_color);
+  font-size: 14px;
+  font-family: var(--main_font_family);
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 200px;
+}
+
+.contact-form button {
+  width: 180px;
+  height: 64px;
+  border-radius: 16px;
+  background: var(--main_color);
+  color: var(--main_bg);
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.subscribe-section {
+  background: #e7f9fd;
+  border-radius: 60px;
+  padding: 80px;
+  margin-top: 160px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.subscribe-section h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.subscribe-section p {
+  width: 620px;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 64px;
+}
+
+.subscribe-form-input {
+  width: 480px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input {
+  width: 100%;
+  height: 80px;
+  border-radius: 24px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.subscribe-form button {
+  position: absolute;
+  right: 10px;
+  border-radius: 16px;
+  background: var(--main_color);
+  color: var(--main_bg);
+  width: 160px;
+  height: 60px;
+}
+
+.subscribe-section img {
+  position: absolute;
+}
+
+.subscribe-image-salad {
+  height: 400px;
+  left: 0;
+  bottom: 0;
+}
+
+.subscribe-image-rucola {
+  height: 90px;
+  right: 280px;
+  bottom: 120px;
+}
+
+.subscribe-image-plate {
+  height: 280px;
+  right: 0;
+  bottom: 0;
+}
